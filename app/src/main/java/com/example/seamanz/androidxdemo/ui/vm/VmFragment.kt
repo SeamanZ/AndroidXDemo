@@ -1,11 +1,12 @@
 package com.example.seamanz.androidxdemo.ui.vm
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
+import androidx.lifecycle.ViewModelProviders
 import com.example.seamanz.androidxdemo.R
 
 class VmFragment : Fragment() {
@@ -15,6 +16,7 @@ class VmFragment : Fragment() {
     }
 
     private lateinit var viewModel: VmViewModel
+    private lateinit var appViewModel: AppViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,6 +28,8 @@ class VmFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(VmViewModel::class.java)
+        appViewModel =
+            ViewModelProviders.of(activity as FragmentActivity).get(AppViewModel::class.java)
         // TODO: Use the ViewModel
     }
 
