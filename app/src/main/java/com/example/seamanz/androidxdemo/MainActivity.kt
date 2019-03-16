@@ -22,5 +22,11 @@ class MainActivity : AppCompatActivity() {
                 startActivity(this)
             }
         }
+
+        btn_view_model.setOnClickListener {
+            Intent(this@MainActivity, VMActivity::class.java).run {
+                startActivity(this)
+            }
+        }
     }
 }
