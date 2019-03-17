@@ -11,7 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".VMActivity"></activity>
+        <activity
+            android:name=".TabbedDemoActivity"
+            android:label="@string/title_activity_tabbed_demo"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.seamanz.androidxdemo.MainActivity" />
+        </activity>
+        <activity android:name=".VMActivity" />
         <activity
             android:name=".BottomNavigationDemoActivity"
             android:label="@string/title_activity_bottom_navigation_demo"

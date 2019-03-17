@@ -8,4 +8,8 @@
     <string name="title_notifications">Notifications</string>
     <string name="button_navigation_activity">ButtomNavigation</string>
     <string name="view_model_fragment">ViewModelFragment</string>
+    <string name="title_activity_tabbed_demo">TabbedDemoActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="tabbeddemo">TabbedDemo</string>
 </resources>

@@ -28,5 +28,11 @@ class MainActivity : AppCompatActivity() {
                 startActivity(this)
             }
         }
+
+        btn_tabbed_demo.setOnClickListener {
+            Intent(this@MainActivity, TabbedDemoActivity::class.java).run {
+                startActivity(this)
+            }
+        }
     }
 }
